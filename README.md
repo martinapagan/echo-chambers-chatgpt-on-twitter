@@ -49,7 +49,7 @@ To rigorously confirm that the detected communities represent genuine behavioral
 ### 4. Dual-Approach Sentiment Analysis (Hybrid NLP Pipeline)
 To ensure robust opinion mining, sentiment extraction is handled through a comparative dual approach:
 * **Lexical Baseline (VADER):** Optimized for social media text, slang, and emojis to extract rapid, rule-based valence scores.
-* **Deep Learning Transformers (BERT):** A contextual, bidirectional language model utilized to capture complex semantic patterns, shifting contexts, and subtle user perceptions regarding ChatGPT that keywords alone cannot detect.
+* **Deep Learning Transformers (roBERTa):** A transformer-based contextual language model derived from BERT and optimized through robust pretraining techniques. RoBERTa (Robustly Optimized BERT Pretraining Approach) is employed to capture deeper semantic relationships, contextual dependencies, sarcasm, implicit sentiment shifts, and nuanced user perceptions regarding ChatGPT within short-form social media texts. Compared to lexicon-based approaches, RoBERTa enables more accurate interpretation of complex linguistic patterns typical of Twitter/X discourse.
 
 ### 5. Cross-Layer Sentiment Mapping
 By combining topological community boundaries with NLP sentiment extraction scores, the pipeline evaluates the distribution and skewness of opinions across independent clusters, evaluating narrative polarization and systemic biases regarding AI technology.
